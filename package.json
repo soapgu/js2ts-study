@@ -1,0 +1,24 @@
+{
+  "name": "js2ts-study",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "demo:01": "node src/01-foundations.ts",
+    "demo:02": "node src/02-modeling.ts",
+    "demo:03": "node src/03-narrowing.ts",
+    "demo:04": "node src/04-generics.ts",
+    "demo:05": "node src/05-type-toolbox.ts",
+    "demo:06": "node src/06-boundaries.ts",
+    "demo:07": "node src/07-node-service.ts",
+    "demo:08": "node src/08-dom-events.ts",
+    "demo:all": "node scripts/run-all.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
