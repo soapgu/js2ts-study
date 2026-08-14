@@ -8,10 +8,11 @@ function parseCreateUser(input: unknown): ParseResult<CreateUserInput> {
   if (!("name" in input) || typeof input.name !== "string" || input.name.trim() === "") {
     return { ok: false, error: "name 必须是非空字符串" };
   }
-  if ("age" in input && typeof input.age !== "number") return { ok: false, error: "age 必须是数字" };
-
   const value: CreateUserInput = { name: input.name.trim() };
-  if ("age" in input) value.age = input.age;
+  if ("age" in input) {
+    if (typeof input.age !== "number") return { ok: false, error: "age 必须是数字" };
+    value.age = input.age;
+  }
   return { ok: true, value };
 }
 
