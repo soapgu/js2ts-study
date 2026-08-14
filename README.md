@@ -12,7 +12,16 @@ npm run typecheck
 npm run demo:all
 ```
 
-也可以逐章运行，例如 `npm run demo:03`。每个源码文件顶部都有学习目标，结尾都有练习；建议先预测输出，再运行，然后完成练习并执行 `npm run typecheck`。
+也可以逐章运行，例如 `npm run demo:03`。每章都有独立的中文精读讲义和对应 Demo。
+
+推荐按同一节奏学习每一章：
+
+1. 先读讲义中的官方资料导读与中文解读。
+2. 不运行代码，先预测对应 Demo 的类型和输出。
+3. 运行章节 Demo，比较结果与预测。
+4. 修改源码完成讲义练习，不要用 `any` 或断言消除错误。
+5. 执行 `npm run typecheck`，理解并修复每条诊断。
+6. 回答讲义末尾的自检问题，再进入下一章。
 
 ## 路线
 
@@ -25,7 +34,7 @@ npm run demo:all
 | 前端补足 | 08 | DOM 查询为空、事件目标、浏览器类型环境 | 1 天 |
 | 综合项目 | [PROJECT.md](./PROJECT.md) | 把知识组合成一个任务 API | 3–5 天 |
 
-完整知识地图、学习方法和延伸阅读见 [TUTORIAL.md](./TUTORIAL.md)。
+完整知识地图和逐章讲义入口见 [TUTORIAL.md](./TUTORIAL.md)。建议从 [第 01 章讲义](./docs/chapters/01-foundations.md) 开始。
 
 ## 学习原则
 
